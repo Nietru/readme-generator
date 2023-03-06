@@ -73,14 +73,14 @@ const questions = [
   {
     type: "input",
     message: "Project contributions: how to contribute",
-    name: "creditsPrompt",
+    name: "contributePrompt",
     // not required, no validate:
   },
   // testing, ##
   {
     type: "input",
     message: "How will the user test this project?",
-    name: "testsPrompt",
+    name: "testPrompt",
     // not required, no validate:
   },
   // Github Username:

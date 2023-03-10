@@ -55,11 +55,18 @@ const questions = [
     },
   },
   // A checkbox section for license selection
+  // changed from checkbox type to list type, because it was allowing user to choose more than one.
   {
-    type: "checkbox",
+    type: "list",
     message: "Repository License:",
     name: "repoLicense",
-    choices: ["Apache", "creative commons", "GNU", "MIT", "None of the above"],
+    choices: [
+      "Apache",
+      "Creative Commons",
+      "Eclipse",
+      "MIT",
+      "None of the above",
+    ],
     validate: (yourLicense) => {
       if (yourLicense) {
         return true;
